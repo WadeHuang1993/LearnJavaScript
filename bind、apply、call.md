@@ -8,7 +8,7 @@
 
 **bind 是返回對應函數，便於稍後調用；apply 、call 則是立即調用。**
 
-```
+```javascript
 var obj = {
     x: 81,
 };
@@ -28,7 +28,7 @@ console.log(foo.getX.apply(obj));   //81
 
 ES 7 新語法 `::` 為 bind 的短語法，使用範例如下：
 
-```
+```javascript
 var log = console.log.bind(console); // ES7 之前的用法
 const log = ::console.log; // ES7 提供的::可以縮短語法
 
@@ -44,17 +44,17 @@ foo::bar(...args); // short version
 ```
 
 ### 把函數綁定到變數上
-```
+```javascript
 var log = console.log.bind(console);
 ```
 
 **用法：**
-```
+```javascript
 log('one', '2', 3, [4], {5: 5});
 ```
 
 **輸出：**
-```
+```javascript
 one 2 3 [4] Object {5: 5}
 ```
 
@@ -63,7 +63,7 @@ one 2 3 [4] Object {5: 5}
 這能讓你在程式運作的時候動態決定要使用哪一種 function。
 
 例如：你可以在程式運行時決定使用哪一個自定義記錄器：
-```
+```javascript
 var logger = require('appLogger');
 var log = logToServer ? logger.log : console.log.bind(console);
 ```
