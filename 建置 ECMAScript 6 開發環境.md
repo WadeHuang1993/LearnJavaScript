@@ -52,7 +52,7 @@ npm install --save-dev babel-preset-stage-3
 ## 編譯 ECMAscript 6
 
 **編譯前： ES6 語法**
-```
+```javascript
 print = (message) => {
     alert(message);
 }
@@ -60,7 +60,7 @@ print = (message) => {
 
 
 **編譯後： ES6 語法已經被編譯成瀏覽器可使用之 JavaScript 語法**
-```
+```javascript
 print = function print(message) {
     alert(message);
 };
