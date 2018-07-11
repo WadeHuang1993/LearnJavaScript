@@ -6,6 +6,8 @@
 
 預計將在這裡撰寫 JavaScript 新技術、核心、DOM 操作核心、開發原理、物件導向、設計模式、重構、單元測試等議題。
 
+## TODOLIST：
+
 - [ ] 新技術解析（ES6、Vue.js)
 - [ ] 核心 Array、Function、Object
 - [ ] DOM 操作解析
